@@ -1,0 +1,254 @@
+/* ============================================
+   TELAS.CSS — Estilos específicos de cada tela
+   Quiz do Haiti · JBM
+   ============================================ */
+
+/* ---------- TELA: QUIZ ---------- */
+.quiz-topo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.progresso-info {
+  font-family: var(--font-titulo);
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.placar {
+  background: var(--or-2);
+  color: var(--noite);
+  font-weight: 800;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-family: var(--font-titulo);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- BARRA DE PROGRESSO ---------- */
+.barra-progresso {
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.barra-progresso > div {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--or-2), var(--rouge-2));
+  transition: width 0.35s ease;
+}
+
+/* ---------- TIMER ---------- */
+.timer-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: var(--trans-media);
+}
+
+.timer-wrap.pulso {
+  animation: pulsoTempo 0.4s ease;
+}
+
+@keyframes pulsoTempo {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+
+.timer-barra {
+  width: 100px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.timer-barra > div {
+  height: 100%;
+  background: var(--verde-2);
+  width: 100%;
+  transition: width 0.5s linear, background 0.3s ease;
+}
+
+.timer-barra > div.baixo {
+  background: var(--rouge-2);
+}
+
+#timer-numero.ganhou {
+  color: #6de3a8;
+}
+
+#timer-numero.perdeu {
+  color: var(--rouge-2);
+}
+
+/* ---------- PERGUNTA ---------- */
+.pergunta-texto {
+  font-family: var(--font-titulo);
+  font-size: 1.35rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+/* ---------- OPÇÕES ---------- */
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.opcao {
+  text-align: left;
+  background: rgba(5, 12, 35, 0.95);
+  border: 2px solid rgba(247, 236, 216, 0.35);
+  color: #ffffff;
+  padding: 16px 18px;
+  border-radius: 16px;
+  font-family: var(--font-texto);
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: var(--trans-media);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+
+.opcao:hover:not([disabled]) {
+  border-color: var(--or-2);
+  background: rgba(15, 30, 70, 0.95);
+  transform: translateX(4px);
+}
+
+.opcao .letra {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-titulo);
+  flex: 0 0 auto;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.opcao.correta {
+  border-color: var(--verde-2);
+  background: rgba(20, 80, 50, 0.9);
+}
+
+.opcao.errada {
+  border-color: var(--rouge-2);
+  background: rgba(100, 20, 40, 0.9);
+}
+
+.opcao[disabled] {
+  cursor: default;
+}
+
+/* ---------- FEEDBACK ---------- */
+.feedback {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.5;
+  background: rgba(5, 12, 35, 0.95);
+  border: 1px solid rgba(247, 236, 216, 0.3);
+  display: none;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.feedback.mostrar {
+  display: block;
+  animation: rise 0.3s ease both;
+}
+
+/* ---------- BOTÃO CONTINUAR ---------- */
+.continuar-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+
+/* ---------- TELA: RESULTADO ---------- */
+.resultado-topo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resultado-numero {
+  font-family: var(--font-titulo);
+  font-size: 3.6rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, #ffffff, var(--or-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 4px 0 rgba(0, 0, 0, 0.3));
+}
+
+.resultado-frase {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 6px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+/* ---------- TELA: GAME OVER ---------- */
+.cartao-gameover {
+  border-color: rgba(224, 41, 74, 0.5);
+  background: rgba(60, 10, 25, 0.97);
+}
+
+.gameover-selo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(224, 41, 74, 0.25);
+  border: 1px solid rgba(224, 41, 74, 0.6);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #ffb3c0;
+  margin-bottom: 14px;
+}
+
+.gameover-titulo {
+  font-size: clamp(2.4rem, 8vw, 3.2rem);
+  background: linear-gradient(180deg, #ffffff, var(--rouge-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 6px;
+  filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.3));
+}

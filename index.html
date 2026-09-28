@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+      <meta name="description" content="Quiz do Haiti: EEMTI JBM">
+      <title>Quiz do Haiti · JBM</title>
+      
+      <link rel="stylesheet" href="styles/reset.css">
+      <link rel="stylesheet" href="styles/fadein.css">
+      <link rel="stylesheet" href="styles/cenario.css">
+      <link rel="stylesheet" href="styles/componentes.css">
+      <link rel="stylesheet" href="styles/telas.css">
+      <link rel="stylesheet" href="styles/efeitos.css">
+      <link rel="stylesheet" href="styles/dopamina.css">
+      <link rel="stylesheet" href="styles/responsivo.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+  <!-- FADE-IN DE ABERTURA -->
+  <div id="fade-overlay">
+    <div class="fade-content">
+      <div class="fade-bandeirola">🇭🇹</div>
+      <div class="fade-titulo">QUIZ DO HAITI</div>
+      <div class="fade-sub">Carregando...</div>
+      <div class="fade-barra"><div id="fade-barra-interna"></div></div>
+    </div>
+  </div>
+
+  <button class="btn-musica" id="btn-musica" title="Ligar/Desligar música">🎵</button>
+
+  <div class="sunrays"></div>
+
+  <div class="cenario-32bit" aria-hidden="true">
+    <div class="sol-raios"></div>
+    <div class="sol"></div>
+    
+    <div class="nuvem n1"></div>
+    <div class="nuvem n2"></div>
+    <div class="nuvem n3"></div>
+    <div class="nuvem n4"></div>
+
+    <div class="montanha fundo"></div>
+    <div class="citadelle"></div>
+    <div class="montanha meio"></div>
+
+    <!-- Casas coloridas das colinas (estilo Jalousie) -->
+    <div class="casas-colina">
+      <div class="casa casa-1"></div>
+      <div class="casa casa-2"></div>
+      <div class="casa casa-3"></div>
+      <div class="casa casa-4"></div>
+      <div class="casa casa-5"></div>
+      <div class="casa casa-6"></div>
+      <div class="casa casa-7"></div>
+      <div class="casa casa-8"></div>
+      <div class="casa casa-9"></div>
+      <div class="casa casa-10"></div>
+      <div class="casa casa-11"></div>
+      <div class="casa casa-12"></div>
+      <div class="casa casa-13"></div>
+      <div class="casa casa-14"></div>
+    </div>
+
+    <!-- Catedral de Porto Príncipe -->
+    <div class="catedral"></div>
+
+    <!-- Iron Market (Marché en Fer) -->
+    <div class="iron-market"></div>
+
+    <div class="mar"><span class="barquinho">⛵</span></div>
+    <div class="areia"></div>
+
+    <span class="palmeira pal-1">🌴</span>
+    <span class="palmeira pal-2">🌴</span>
+    <div class="tanbou"></div>
+
+    <span class="flor g1"></span>
+    <span class="flor g2"></span>
+    <span class="flor g3"></span>
+    <span class="flor g4"></span>
+    <span class="flor g5"></span>
+
+    <span class="ave ave-1">🕊️</span>
+    <span class="ave ave-2">🕊️</span>
+  </div>
+
+  <div class="stage">
+
+  <!-- ==screen-1:inicio==-->
+
+  <section id="screen-index" class="screen active">
+
+    <span class="bixinho b1">🐸</span>
+    <span class="bixinho b2">🦜</span>
+    <span class="bixinho b3">🥁</span>
+    <span class="bixinho b4">🦎</span>
+
+    <div class="menu-painel">
+      <p class="kicker">🇭🇹 1º A · Colégio José Bezerra de Menezes — JBM</p>
+      <h1 class="titulo-pixel">Quiz<br>do Haiti</h1>
+      <p class="subt-pixel">Descubra a história, a cultura e as curiosidades da primeira república negra do mundo</p>
+
+      <div class="menu-botoes">
+        <button class="btn-menu btn-jogar" onclick="mudarTela('tela-modo')">▶ JOGAR</button>
+        <button class="btn-menu btn-creditos" onclick="mudarTela('tela-creditos')">CRÉDITOS</button>
+        <a class="btn-menu btn-repo" href="" target="_blank" rel="noopener">REPOSITÓRIO</a>
+      </div>
+      <a href="https://www.google.com/search?q=haiti" target="_blank" rel="noopener" class="bandeira-link" title="Saiba mais sobre o Haiti">
+        <img src="https://flagcdn.com/w80/ht.png" alt="Bandeira do Haiti" class="bandeira-haiti">
+      </a>
+    </div>
+
+    <p class="rodape-inicio">Toque em JOGAR para escolher o modo de jogo</p>
+  </section>
+
+  <!-- ==screen-1b:-CRÉDITOS== -->
+  <section id="tela-creditos" class="screen">
+    <div class="cartao">
+      <h2 style="font-size:1.6rem; margin-bottom:10px;">Créditos</h2>
+      <p class="credito-linha">⚠ Quiz didático feito pelos alunos da <b>Turma do 1º A</b> do Colégio José Bezerra de Menezes (JBM).</p>
+      <p class="credito-linha">Conteúdo sobre o Haiti: história, cultura e curiosidades da primeira república negra do mundo.</p>
+      <p class="credito-linha">🇭🇹 A primeira república negra do mundo, independente desde 1804.</p>
+
+      <div style="display:flex; justify-content:center; margin-top:22px;">
+        <button class="btn-secundario" onclick="mudarTela('screen-index')">◂ Voltar</button>
+      </div>
+    </div>
+  </section>
+
+  <!--==screen-2:-escolhas-==-->
+
+  <section id="tela-modo" class="screen">
+    <div class="cartao">
+      <h2 style="font-size:1.6rem; margin-bottom:4px;">Escolha o modo de jogo</h2>
+      <p style="margin:0; opacity:.85; font-size:.95rem;">O tempo corre durante todo o quiz: acertar ganha tempo extra, errar tira tempo. Se o tempo zerar, é game over!</p>
+
+      <div class="modos">
+        <div class="modo-card modo-facil" onclick="iniciarQuiz('facil')">
+          <div class="modo-icone">🌴</div>
+          <div class="modo-texto">
+            <h3>Fácil</h3>
+            <p>10 perguntas · começa com 40s · +6s no acerto / −4s no erro · 10 pts por acerto</p>
+          </div>
+        </div>
+        <div class="modo-card modo-medio" onclick="iniciarQuiz('medio')">
+          <div class="modo-icone">🥁</div>
+          <div class="modo-texto">
+            <h3>Médio</h3>
+            <p>10 perguntas · começa com 30s · +5s no acerto / −6s no erro · 15 pts por acerto</p>
+          </div>
+        </div>
+        <div class="modo-card modo-dificil" onclick="iniciarQuiz('dificil')">
+          <div class="modo-icone">🔥</div>
+          <div class="modo-texto">
+            <h3>Difícil</h3>
+            <p>10 perguntas · começa com 22s · +4s no acerto / −8s no erro · 20 pts por acerto</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:center; margin-top:22px;">
+        <button class="btn-secundario" onclick="mudarTela('screen-index')">◂ Voltar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==screen-3=== -->
+  <section id="tela-quiz" class="screen">
+    <div class="cartao">
+      <div class="quiz-topo">
+        <div class="progresso-info" id="info-progresso">Pergunta 1 de 10</div>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div class="timer-wrap" id="timer-wrap" style="display:none;">
+            ⏱️ <span id="timer-numero">20</span>s
+            <div class="timer-barra"><div id="timer-barra-interna"></div></div>
+          </div>
+          <div class="placar">⭐ <span id="placar-numero">0</span></div>
+        </div>
+      </div>
+
+      <div class="barra-progresso"><div id="barra-progresso-interna" style="width:10%;"></div></div>
+
+      <div class="pergunta-texto" id="pergunta-texto">Carregando pergunta...</div>
+
+      <div class="opcoes" id="opcoes-container"></div>
+
+      <div class="feedback" id="feedback-box"></div>
+
+      <div class="continuar-wrap">
+        <button class="btn" id="btn-continuar" style="display:none;" onclick="proximaPergunta()">Continuar ▸</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==screen-4:-RESULTADO==-->
+  <section id="tela-resultado" class="screen">
+      <div class="resultado-topo">
+        <div class="progresso-info" id="resultado-modo">Modo Fácil</div>
+        <div class="resultado-numero" id="resultado-pontos">0 pts</div>
+        <div class="resultado-frase" id="resultado-frase">Continue estudando sobre o Haiti!</div>
+      </div>
+
+      <div class="barra-acoes">
+        <button class="btn" onclick="reiniciarMesmoModo()">Jogar de novo ▸</button>
+        <button class="btn-secundario" onclick="mudarTela('tela-modo')">Trocar modo</button>
+      </div>
+
+      <div class="revisao" id="revisao-container"></div>
+    </div>
+  </section>
+
+  <!-- ===screen-5:GAME-OVER==-->
+  <section id="tela-gameover" class="screen">
+    <div class="cartao cartao-gameover" style="text-align:center;">
+      <svg width="100" height="118" viewBox="0 0 118 140" xmlns="http://www.w3.org/2000/svg" style="margin:0 auto 6px;">
+        <circle cx="59" cy="38" r="24" fill="#f6d9a6"/>
+        <path d="M35 32 Q59 6 83 32 Q86 20 59 14 Q32 20 35 32Z" fill="#0a2e73"/>
+        <path d="M42 36 L56 44 M56 36 L42 44" stroke="#0c1730" stroke-width="3" stroke-linecap="round"/>
+        <path d="M62 36 L76 44 M76 36 L62 44" stroke="#0c1730" stroke-width="3" stroke-linecap="round"/>
+        <path d="M48 52 Q59 46 70 52" stroke="#8c4a1e" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </svg>
+      <div class="gameover-selo">⏱️ O tempo acabou</div>
+      <h2 class="gameover-titulo">Game Over!</h2>
+      <div class="resultado-numero" id="gameover-pontos" style="font-size:2.6rem;">0 pts</div>
+      <p class="resultado-frase" id="gameover-frase" style="margin-top:6px;">Você chegou até a pergunta X de 10.</p>
+
+      <div class="barra-acoes">
+        <button class="btn" onclick="reiniciarMesmoModo()">Tentar de novo ▸</button>
+        <button class="btn-secundario" onclick="mudarTela('tela-modo')">Trocar modo</button>
+      </div>
+
+      <div class="revisao" id="gameover-revisao"></div>
+    </div>
+  </section>
+
+</div>
+
+
+<script src="js/perguntas.js"></script>
+<script src="js/musica.js"></script>
+<script src="js/efeitos.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

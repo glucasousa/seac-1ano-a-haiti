@@ -1,0 +1,353 @@
+/* ============================================
+   COMPONENTES.CSS — Botões, Cards e Painéis
+   Quiz do Haiti · JBM
+   ============================================ */
+
+/* ---------- PALCO ---------- */
+.stage {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  max-width: var(--max-largura);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px 20px 80px;
+}
+
+/* ---------- TELAS ---------- */
+.screen {
+  width: 100%;
+  max-width: 640px;
+  display: none;
+  animation: rise 0.5s ease both;
+}
+
+.screen.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- TIPOGRAFIA ---------- */
+.kicker {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--or-2);
+  letter-spacing: 0.5px;
+}
+
+.titulo-pixel {
+  font-family: var(--font-pixel);
+  font-size: clamp(1.6rem, 6.5vw, 2.8rem);
+  line-height: 1.3;
+  color: var(--branco);
+  text-shadow:
+    0 5px 0 var(--rouge-2),
+    0 11px 0 var(--noite);
+  margin: 6px 0 18px;
+}
+
+.subt-pixel {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--branco);
+  line-height: 1.5;
+  max-width: 440px;
+  margin: 0 auto 26px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+/* ---------- BOTÕES ---------- */
+.btn {
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 16px 40px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--or-2), var(--or));
+  color: var(--noite);
+  box-shadow:
+    0 8px 0 #a06d15,
+    0 16px 28px rgba(0, 0, 0, 0.35);
+  transition: var(--trans-rapida);
+}
+
+.btn:active {
+  transform: translateY(6px);
+  box-shadow:
+    0 2px 0 #a06d15,
+    0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.btn-secundario {
+  background: rgba(10, 25, 60, 0.9);
+  color: var(--branco);
+  box-shadow:
+    0 6px 0 rgba(0, 0, 0, 0.4),
+    0 10px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(247, 236, 216, 0.4);
+  font-size: 1rem;
+  padding: 12px 28px;
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  border-radius: 999px;
+  transition: var(--trans-rapida);
+}
+
+.btn-secundario:active {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(4px);
+}
+
+.btn-secundario:hover {
+  background: rgba(15, 35, 80, 0.95);
+}
+
+/* ---------- CARTÃO ---------- */
+.cartao {
+  width: 100%;
+  background: rgba(5, 12, 35, 0.97);
+  border: 2px solid rgba(247, 236, 216, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- PAINEL DO MENU ---------- */
+.menu-painel {
+  position: relative;
+  z-index: 3;
+  width: min(580px, 94vw);
+  text-align: center;
+  background: rgba(5, 12, 35, 0.97);
+  border: 5px solid var(--or);
+  outline: 4px solid var(--branco);
+  outline-offset: -14px;
+  border-radius: 22px;
+  box-shadow:
+    0 0 0 7px var(--noite),
+    0 32px 56px rgba(0, 0, 0, 0.7);
+  padding: 32px 28px 28px;
+}
+
+.menu-painel .kicker {
+  font-family: var(--font-titulo);
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+}
+
+/* ---------- BOTÕES DO MENU ---------- */
+.menu-botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn-menu {
+  font-family: var(--font-pixel);
+  font-size: 0.72rem;
+  line-height: 1.6;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  border-radius: 12px;
+  color: var(--branco);
+  background: #0d2352;
+  border: 4px solid var(--or-2);
+  text-shadow: 0 3px 0 var(--noite);
+  box-shadow: 0 6px 0 var(--noite);
+  transition: var(--trans-rapida);
+  display: block;
+}
+
+.btn-menu:hover {
+  filter: brightness(1.18);
+  transform: translateY(-1px);
+}
+
+.btn-menu:active {
+  transform: translateY(5px);
+  box-shadow: 0 1px 0 var(--noite);
+}
+
+.btn-jogar {
+  background: linear-gradient(180deg, var(--or-2), var(--or));
+  border-color: var(--branco);
+  color: var(--noite);
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.35);
+  box-shadow: 0 6px 0 #a06d15;
+}
+
+.btn-jogar:active {
+  box-shadow: 0 1px 0 #a06d15;
+}
+
+.btn-creditos, .btn-repo {
+  border-color: var(--sable);
+}
+
+/* ---------- MODOS DE JOGO ---------- */
+.modos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.modo-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: rgba(5, 12, 35, 0.95);
+  border: 2px solid rgba(247, 236, 216, 0.3);
+  border-radius: 20px;
+  padding: 18px 20px;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--trans-media);
+}
+
+.modo-card:hover {
+  border-color: var(--or-2);
+  transform: translateX(6px);
+  background: rgba(15, 30, 70, 0.95);
+}
+
+.modo-icone {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 auto;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+}
+
+.modo-facil .modo-icone {
+  background: linear-gradient(160deg, #3ec98f, #1a6b48);
+}
+
+.modo-medio .modo-icone {
+  background: linear-gradient(160deg, var(--or-2), #b9791f);
+}
+
+.modo-dificil .modo-icone {
+  background: linear-gradient(160deg, var(--rouge-2), #8c1327);
+}
+
+.modo-texto h3 {
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.modo-texto p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: var(--branco);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* ---------- CRÉDITOS ---------- */
+.credito-linha {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 8px 0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* ---------- RODAPÉ ---------- */
+.rodape-inicio {
+  margin-top: 22px;
+  font-size: 0.88rem;
+  color: var(--branco);
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* ---------- BANDEIRA DO HAITI ---------- */
+.bandeira-link {
+  display: inline-block;
+  margin-top: 20px;
+  transition: transform 0.2s ease;
+}
+
+.bandeira-link:hover {
+  transform: scale(1.1);
+}
+
+.bandeira-haiti {
+  width: 60px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ---------- BANDEIRA DO HAITI ---------- */
+.bandeira-link {
+  display: inline-block;
+  margin-top: 20px;
+  transition: transform 0.2s ease;
+}
+
+.bandeira-link:hover {
+  transform: scale(1.1);
+}
+
+.bandeira-haiti {
+  width: 60px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ---------- BARRA DE AÇÕES ---------- */
+.barra-acoes {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+/* ---------- REVISÃO ---------- */
+.revisao {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.revisao-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: rgba(5, 12, 35, 0.95);
+  border: 1px solid rgba(247, 236, 216, 0.25);
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.revisao-marca {
+  font-size: 1.15rem;
+  flex: 0 0 auto;
+}

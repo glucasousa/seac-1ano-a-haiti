@@ -1,0 +1,190 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+
+mascote: 
+
+
+<svg class="mascote" width="118" height="140" viewBox="0 0 118 140" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="59" cy="128" rx="34" ry="8" fill="#000" opacity="0.25"/>
+          <path d="M20 90 Q10 60 30 40 Q40 20 59 18 Q78 20 88 40 Q108 60 98 90 Q100 115 59 118 Q18 115 20 90Z" fill="#1f7a5c"/>
+          <path d="M20 90 Q10 60 30 40 Q40 20 59 18" fill="none" stroke="#155c44" stroke-width="2" opacity="0.4"/>
+          <circle cx="59" cy="52" r="30" fill="#2ea36f"/>
+          <path d="M32 44 Q59 18 86 44 Q88 60 59 66 Q30 60 32 44Z" fill="#c81f3c"/>
+          <circle cx="47" cy="54" r="5" fill="#0c1730"/>
+          <circle cx="71" cy="54" r="5" fill="#0c1730"/>
+          <circle cx="48.5" cy="52.5" r="1.6" fill="#fff"/>
+          <circle cx="72.5" cy="52.5" r="1.6" fill="#fff"/>
+          <path d="M52 65 Q59 72 66 65" stroke="#0c1730" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M25 55 Q10 50 8 65 Q18 68 27 60Z" fill="#e3a233"/>
+          <path d="M93 55 Q108 50 110 65 Q100 68 91 60Z" fill="#e3a233"/>
+          <rect x="52" y="86" width="14" height="20" rx="6" fill="#0a2e73"/>
+          <rect x="52" y="86" width="14" height="7" rx="3" fill="#c81f3c"/>
+          <path d="M62 88 L80 78 L80 96 L62 96Z" fill="#f4c05a" stroke="#0c1730" stroke-width="1.5"/>
+        </svg>
+        <div class="p-name">Zaza, o Trogon</div>
+      </div>
+
+
+
+      <div class="personagem-card b">
+        <svg class="mascote" width="118" height="140" viewBox="0 0 118 140" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="59" cy="128" rx="34" ry="8" fill="#000" opacity="0.25"/>
+          <path d="M30 118 Q28 80 34 66 Q59 56 84 66 Q90 80 88 118Z" fill="#c8862f"/>
+          <ellipse cx="59" cy="88" rx="26" ry="30" fill="#e3a233"/>
+          <ellipse cx="59" cy="88" rx="26" ry="30" fill="none" stroke="#a5661d" stroke-width="3"/>
+          <line x1="34" y1="76" x2="84" y2="76" stroke="#a5661d" stroke-width="3"/>
+          <line x1="34" y1="100" x2="84" y2="100" stroke="#a5661d" stroke-width="3"/>
+          <circle cx="59" cy="38" r="24" fill="#f6d9a6"/>
+          <path d="M35 32 Q59 6 83 32 Q86 20 59 14 Q32 20 35 32Z" fill="#0a2e73"/>
+          <circle cx="49" cy="40" r="4" fill="#0c1730"/>
+          <circle cx="69" cy="40" r="4" fill="#0c1730"/>
+          <path d="M50 50 Q59 56 68 50" stroke="#8c4a1e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="41" cy="46" r="4" fill="#e0294a" opacity="0.5"/>
+          <circle cx="77" cy="46" r="4" fill="#e0294a" opacity="0.5"/>
+          <rect x="20" y="80" width="10" height="26" rx="5" fill="#f6d9a6"/>
+          <rect x="88" y="80" width="10" height="26" rx="5" fill="#f6d9a6"/>
+        </svg>
+        <div class="personagem-nome">Tanbou, o Tambor</div>
+
+
+
+        <div class="p-linha">
+      <div class="p-card">
+        
+        <svg class="mascote" width="118" height="140" viewBox="0 0 118 140" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="59" cy="128" rx="34" ry="8" fill="#000" opacity="0.25"/>
+          <path d="M20 90 Q10 60 30 40 Q40 20 59 18 Q78 20 88 40 Q108 60 98 90 Q100 115 59 118 Q18 115 20 90Z" fill="#1f7a5c"/>
+          <path d="M20 90 Q10 60 30 40 Q40 20 59 18" fill="none" stroke="#155c44" stroke-width="2" opacity="0.4"/>
+          <circle cx="59" cy="52" r="30" fill="#2ea36f"/>
+          <path d="M32 44 Q59 18 86 44 Q88 60 59 66 Q30 60 32 44Z" fill="#c81f3c"/>
+          <circle cx="47" cy="54" r="5" fill="#0c1730"/>
+          <circle cx="71" cy="54" r="5" fill="#0c1730"/>
+          <circle cx="48.5" cy="52.5" r="1.6" fill="#fff"/>
+          <circle cx="72.5" cy="52.5" r="1.6" fill="#fff"/>
+          <path d="M52 65 Q59 72 66 65" stroke="#0c1730" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M25 55 Q10 50 8 65 Q18 68 27 60Z" fill="#e3a233"/>
+          <path d="M93 55 Q108 50 110 65 Q100 68 91 60Z" fill="#e3a233"/>
+          <rect x="52" y="86" width="14" height="20" rx="6" fill="#0a2e73"/>
+          <rect x="52" y="86" width="14" height="7" rx="3" fill="#c81f3c"/>
+          <path d="M62 88 L80 78 L80 96 L62 96Z" fill="#f4c05a" stroke="#0c1730" stroke-width="1.5"/>
+        </svg>
+        <div class="p-name">Zaza, o Trogon</div>
+      </div>
+
+      <div class="personagem-card b">
+        <svg class="mascote" width="118" height="140" viewBox="0 0 118 140" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="59" cy="128" rx="34" ry="8" fill="#000" opacity="0.25"/>
+          <path d="M30 118 Q28 80 34 66 Q59 56 84 66 Q90 80 88 118Z" fill="#c8862f"/>
+          <ellipse cx="59" cy="88" rx="26" ry="30" fill="#e3a233"/>
+          <ellipse cx="59" cy="88" rx="26" ry="30" fill="none" stroke="#a5661d" stroke-width="3"/>
+          <line x1="34" y1="76" x2="84" y2="76" stroke="#a5661d" stroke-width="3"/>
+          <line x1="34" y1="100" x2="84" y2="100" stroke="#a5661d" stroke-width="3"/>
+          <circle cx="59" cy="38" r="24" fill="#f6d9a6"/>
+          <path d="M35 32 Q59 6 83 32 Q86 20 59 14 Q32 20 35 32Z" fill="#0a2e73"/>
+          <circle cx="49" cy="40" r="4" fill="#0c1730"/>
+          <circle cx="69" cy="40" r="4" fill="#0c1730"/>
+          <path d="M50 50 Q59 56 68 50" stroke="#8c4a1e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="41" cy="46" r="4" fill="#e0294a" opacity="0.5"/>
+          <circle cx="77" cy="46" r="4" fill="#e0294a" opacity="0.5"/>
+          <rect x="20" y="80" width="10" height="26" rx="5" fill="#f6d9a6"/>
+          <rect x="88" y="80" width="10" height="26" rx="5" fill="#f6d9a6"/>
+        </svg>
+        <div class="personagem-nome">Tanbou, o Tambor</div>
+      </div>
+
+
+
+      vale a pena olhar e analisar:
+      <button class="btn" onclick="mudarTela('tela-modo')">Jogar ▸</button>
+    <p class="rodape-inicio">Toque em jogar para escolher o modo e começar o quiz</p>
+  </section>
+
+  <!--==screen-2:-escolhas-==-->
+  
+  <section id="tela-modo" class="screen">
+    <div class="cartao">
+      <h2 style="font-size:1.6rem; margin-bottom:4px;">Escolha o modo de jogo</h2>
+      <p style="margin:0; opacity:.85; font-size:.95rem;">O tempo corre durante todo o quiz: acertar ganha tempo extra, errar tira tempo. Se o tempo zerar, é game over!</p>
+
+      <div class="modos">
+        <div class="modo-card modo-facil" onclick="iniciarQuiz('facil')">
+          <div class="modo-icone">🌴</div>
+          <div class="modo-texto">
+            <h3>Fácil</h3>
+            <p>8 perguntas · começa com 40s · +6s no acerto / −4s no erro · 10 pts por acerto</p>
+          </div>
+        </div>
+        <div class="modo-card modo-medio" onclick="iniciarQuiz('medio')">
+          <div class="modo-icone">🥁</div>
+          <div class="modo-texto">
+            <h3>Médio</h3>
+            <p>8 perguntas · começa com 30s · +5s no acerto / −6s no erro · 15 pts por acerto</p>
+          </div>
+        </div>
+        <div class="modo-card modo-dificil" onclick="iniciarQuiz('dificil')">
+          <div class="modo-icone">🔥</div>
+          <div class="modo-texto">
+            <h3>Difícil</h3>
+            <p>8 perguntas · começa com 22s · +4s no acerto / −8s no erro · 20 pts por acerto</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:center; margin-top:22px;">
+        <button class="btn-secundario" onclick="mudarTela('tela-inicio')">◂ Voltar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==screen-3=== -->
+  <section id="tela-quiz" class="screen">
+    <div class="cartao">
+      <div class="quiz-topo">
+        <div class="progresso-info" id="info-progresso">Pergunta 1 de 8</div>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div class="timer-wrap" id="timer-wrap" style="display:none;">
+            ⏱️ <span id="timer-numero">20</span>s
+            <div class="timer-barra"><div id="timer-barra-interna"></div></div>
+          </div>
+          <div class="placar">⭐ <span id="placar-numero">0</span></div>
+        </div>
+      </div>
+
+      <div class="barra-progresso"><div id="barra-progresso-interna" style="width:12.5%;"></div></div>
+
+      <div class="quiz-cabecalho">
+        <svg class="mascote-pequeno" viewBox="0 0 118 140" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="59" cy="52" r="30" fill="#2ea36f"/>
+          <path d="M32 44 Q59 18 86 44 Q88 60 59 66 Q30 60 32 44Z" fill="#c81f3c"/>
+          <circle cx="47" cy="54" r="5" fill="#0c1730"/>
+          <circle cx="71" cy="54" r="5" fill="#0c1730"/>
+          <circle cx="48.5" cy="52.5" r="1.6" fill="#fff"/>
+          <circle cx="72.5" cy="52.5" r="1.6" fill="#fff"/>
+          <path d="M52 65 Q59 72 66 65" stroke="#0c1730" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div class="pergunta-texto" id="pergunta-texto">Carregando pergunta...</div>
+      </div>
+
+      <div class="opcoes" id="opcoes-container"></div>
+
+      <div class="feedback" id="feedback-box"></div>
+
+      <div class="continuar-wrap">
+        <button class="btn" id="btn-continuar" style="display:none;" onclick="proximaPergunta()">Continuar ▸</button>
+      </div>
+    </div>
+  </section>
+
+
+
+   <div class="quiz-cabecalho">
+        <svg class="mascote-pequeno" viewBox="0 0 118 140" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="59" cy="52" r="30" fill="#2ea36f"/>
+          <path d="M32 44 Q59 18 86 44 Q88 60 59 66 Q30 60 32 44Z" fill="#c81f3c"/>
+          <circle cx="47" cy="54" r="5" fill="#0c1730"/>
+          <circle cx="71" cy="54" r="5" fill="#0c1730"/>
+          <circle cx="48.5" cy="52.5" r="1.6" fill="#fff"/>
+          <circle cx="72.5" cy="52.5" r="1.6" fill="#fff"/>
+          <path d="M52 65 Q59 72 66 65" stroke="#0c1730" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>

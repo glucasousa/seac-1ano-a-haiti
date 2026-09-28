@@ -1,0 +1,256 @@
+/* ============================================
+   RESPONSIVO.CSS — Media Queries
+   Quiz do Haiti · JBM
+   Resolução máxima: 1920x1920
+   ============================================ */
+
+/* ---------- TELAS GRANDES (até 1920px) ---------- */
+@media (min-width: 1600px) {
+  .stage {
+    padding: 48px 40px 100px;
+  }
+
+  .screen {
+    max-width: 720px;
+  }
+
+  .titulo-pixel {
+    font-size: 3.2rem;
+  }
+
+  .menu-painel {
+    width: 640px;
+    padding: 40px 36px 36px;
+  }
+}
+
+/* ---------- TABLETS (768px - 1200px) ---------- */
+@media (max-width: 1200px) {
+  .stage {
+    padding: 24px 16px 60px;
+  }
+
+  .screen {
+    max-width: 600px;
+  }
+
+  .titulo-pixel {
+    font-size: 2.2rem;
+  }
+}
+
+/* ---------- CELULARES (até 768px) ---------- */
+@media (max-width: 768px) {
+  .stage {
+    padding: 18px 12px 40px;
+  }
+
+  .screen {
+    max-width: 100%;
+  }
+
+  .titulo-pixel {
+    font-size: 1.6rem;
+  }
+
+  .subt-pixel {
+    font-size: 0.95rem;
+  }
+
+  .bixinho {
+    font-size: 2.4rem;
+  }
+
+  .b1 { top: 6%; left: 3%; }
+  .b2 { top: 12%; right: 3%; }
+  .b3 { bottom: 10%; left: 4%; }
+  .b4 { bottom: 16%; right: 4%; }
+
+  .sol { width: 60px; height: 60px; top: 25px; right: 25px; }
+  .sol-raios { width: 100px; height: 100px; top: 15px; right: 15px; }
+
+  .menu-painel {
+    padding: 24px 20px 22px;
+    border-width: 4px;
+  }
+
+  .btn-menu {
+    font-size: 0.6rem;
+    padding: 16px 14px;
+  }
+
+  .modo-card {
+    padding: 14px 16px;
+    gap: 14px;
+  }
+
+  .modo-icone {
+    width: 44px;
+    height: 44px;
+    font-size: 1.3rem;
+  }
+
+  .pergunta-texto {
+    font-size: 1.1rem;
+  }
+
+  .opcao {
+    padding: 14px 16px;
+    font-size: 0.95rem;
+  }
+
+  .quiz-topo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .resultado-numero {
+    font-size: 2.6rem;
+  }
+}
+
+/* ---------- CELULARES PEQUENOS (até 480px) ---------- */
+@media (max-width: 480px) {
+  .titulo-pixel {
+    font-size: 1.3rem;
+  }
+
+  .menu-botoes {
+    gap: 12px;
+  }
+
+  .btn-menu {
+    font-size: 0.55rem;
+    padding: 14px 10px;
+  }
+
+  .modos {
+    gap: 10px;
+  }
+
+  .modo-card {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .modo-texto h3 {
+    font-size: 1rem;
+  }
+
+  .modo-texto p {
+    font-size: 0.78rem;
+  }
+
+  .cartao {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  .opcoes {
+    gap: 10px;
+  }
+
+  .opcao {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+
+  .opcao .letra {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  .bixinho {
+    font-size: 1.8rem;
+  }
+
+  .timer-barra {
+    width: 70px;
+  }
+
+  .barra-acoes {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .barra-acoes .btn,
+  .barra-acoes .btn-secundario {
+    width: 100%;
+  }
+}
+
+/* ---------- ALTURA MÍNIMA (telas muito baixas) ---------- */
+@media (max-height: 600px) {
+  .stage {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+
+  .menu-painel {
+    padding: 20px 24px;
+  }
+
+  .titulo-pixel {
+    font-size: 1.4rem;
+    margin: 4px 0 12px;
+  }
+
+  .subt-pixel {
+    margin-bottom: 16px;
+  }
+}
+
+/* ---------- LANDSCAPE EM CELULAR ---------- */
+@media (max-height: 500px) and (orientation: landscape) {
+  .cenario-8bit {
+    display: none;
+  }
+
+  .stage {
+    padding-top: 10px;
+  }
+
+  .bixinho {
+    display: none;
+  }
+
+  .menu-painel {
+    padding: 16px 20px;
+  }
+
+  .titulo-pixel {
+    font-size: 1.2rem;
+  }
+
+  .menu-botoes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-menu {
+    width: auto;
+    min-width: 140px;
+  }
+}
+
+/* ---------- ACESSIBILIDADE: MOVIMENTO REDUZIDO ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---------- MODO ESCURO (se o sistema preferir) ---------- */
+@media (prefers-color-scheme: dark) {
+  /* O jogo já é escuro por padrão, mas podemos ajustar detalhes */
+  .menu-painel {
+    background: rgba(8, 20, 50, 0.92);
+  }
+}
